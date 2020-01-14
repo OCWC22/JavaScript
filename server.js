@@ -14,7 +14,7 @@ app.use(session({
     resave: false,
     saveUninitialized: true,
     cookie: { maxAge: 60000 },
-
+    
 }))
 app.use(express.static(__dirname + "/static"));
 app.use(express.urlencoded({ extended: true }));
